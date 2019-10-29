@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                    <a class="navbar-brand" href="#">FortniteHub</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Fortnite Stats</a></li>
+                    <li><a href="compare/comparestats.html">Compare Stats</a></li>
+                    <li><a href="store/fortnitestore.html">Fortnite Store</a></li>
+                    <li><a href="challenges/activechallenges.html">Active Challenges</a></li>
+                    <li><a href="news/fortnitenews.html">Fortnite News</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="inputSection">
+                    <h1 id="title">FortniteHub</h1>
+    
+                    <div id="optionSelect">
+                        <div>
+                            <input type="text" class="form-control" id="username" value="Ninja" placeholder="Epic Username">
+                        </div>
+                        
+                        <div>
+                            <select class="form-control" id="gaming_console">
+                            <option value="pc">PC</option>
+                            <option value="xbox">XBOX</option>
+                            <option value="psn">PSN</option>
+                            </select>
+                        </div>
+                        <input id="playerStatsBtn" type="submit" class="btn btn-info" onclick="getFortnitePlayerStats()" value="Search">
+                    </div>
+    
+                    <br>
+    
+                    <div>  
+                        <table id = "fortDataTable" class="table table-light"></table>
+                    </div>
+    
+                </div>
+                    
+            <div class="push"></div>
+        </div>
+        <footer class="footer">
+                Fortnite is a registered trademark of Epic Games. We are in no way affiliated with Epic Games. <br>
+                Powered by Fortnite Tracker API and NEWS API.
+        </footer>
+    </body>
+
+</html>

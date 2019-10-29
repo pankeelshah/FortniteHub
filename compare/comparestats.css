@@ -1,0 +1,60 @@
+
+
+#greater{
+    background-color: #67c27c;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+    background-color: rgb(98, 98, 98);
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+  .footer,
+  .push {
+    height: 50px;
+  }
+
+  .footer{
+    background-color: #333;
+    color: #a3a3a3;
+    text-align: center;
+      
+  }
+
+  #title{
+    font-size: 60pt;
+    font-weight: bold;
+    color: #89f5a2;
+}
+
+#inputSection{
+    text-align: center;
+    padding-top: 2.5%;
+}
+ 
+
+#playerStatsBtn{
+    background-color: #67c27c;
+    border-color: #89f5a2;
+}
+ 
+#optionSelect{
+    display: flex;
+    justify-content: center;
+}
+ 
+#optionSelect input[type="text"]::placeholder{
+    text-align: left;
+}
+
+table{
+    color: white;
+    font-weight: bold;
+}
