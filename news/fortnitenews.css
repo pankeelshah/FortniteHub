@@ -95,3 +95,15 @@
     text-align: center;
       
   }
+  #inputSection{
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+#searchbar{
+    display: flex;
+    /* width: 50%; */
+    justify-content: center;
+
+
+}

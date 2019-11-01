@@ -33,6 +33,7 @@ async function getNews(){
     // var wrapper = document.querySelector("#wrapper");
     var cardDiv = document.createElement("div");
     cardDiv.id = "cardDiv";
+    cardDiv.className = "cardDiv";
 
     var card = document.createElement("div");
     var br = document.createElement("br");
@@ -70,19 +71,38 @@ async function getNews(){
     link.appendChild(cardBody);
     cardBody.appendChild(title);
     cardBody.appendChild(discription);
-    if(count%3 == 0){
-      // console.log(count);
-      // console.log(article.title);
-      // mainDiv.appendChild(br);
+
+  }
+
+function test(){
+  var searchText = document.querySelector("#search").value;
+  let divs = document.getElementsByClassName("cardDiv");
+  console.log(searchText);
+  if(searchText != ""){
+    
+    // console.log(divs);
+    for (let x = 0; x < divs.length; x++) {
+      var innerText = divs[x].innerText;
+      let div = divs[x];
+      if(innerText.toLowerCase().includes(searchText.toLowerCase())){
+        div.style.display = 'block';
+      }else{
+        console.log(false);
+        div.style.display = 'none';
+      }
     }
+  }else{
+    for (let x = 0; x < divs.length; x++) {
+
+        let div = divs[x];
+        div.style.display = 'block';
+  }
+}
   
     
+    // let content = div.innerHTML.trim();
 
-    // <div class="card-body">
-    //             <h4 class="card-title">Jane Doe</h4>
-    //             <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-    //             <a href="#" class="btn btn-primary">See Profile</a>
-    // </div>
-
-    
-  }
+    // if (content == 'Handtekening' || content == 'Thuis') {
+    //     div.style.display = 'none';
+    // }
+}
