@@ -14,6 +14,7 @@ function getCurrentFortniteStore(){
     .then( response => response.json() )
     .then( 
       function(data){
+        console.log(data.data[0]);
         
         var dataLength = data.data.length;
         
